@@ -1,0 +1,12 @@
+﻿#!/usr/bin/env node
+
+var HttpServer = require('../lib/index.js').HttpServer;
+
+var server = new HttpServer({
+    port: process.argv[2] || 8080,
+    physicalPath: require('path').resolve('.')
+});
+
+server.start();
+
+console.log("Server Running At " + server.rootUrl);

@@ -1,0 +1,82 @@
+{
+    "port": 80,
+    "physicalPath": "../",
+    "virtualPaths": {
+
+    },
+    "modules": {
+        "urlRewrite": "./modules/urlrewrite.js"
+    },
+    "defaultPages": { 
+        "index.htm": true,
+		"index.html": true
+    },
+    "handlers": {
+        "directory": "./handlers/directoryhandler.js",
+        "error": "./handlers/errorhandler.js",
+        ".njs": "./handlers/njshandler.js",
+        "*": "./handlers/staticfilehandler.js"
+    },
+    "urlRewrites": {
+
+    },
+    "mimeTypes": {
+        ".html": "text/html",
+		".htm": "text/html",
+		".css": "text/css",
+		".less": "text/css",
+		".js": "text/javascript",
+		".txt": "text/plain",
+		".xml": "text/xml",
+		".bmp": "image/bmp",
+		".png": "image/png",
+		".jpg": "image/jpg",
+		".jpeg": "image/jpeg",
+		".gif": "image/gif",
+		".ico": "image/icon",
+		".woff": "application/x-font-woff",
+        ".svg": "image/svg+xml",
+        ".swf": "application/x-shockwave-flash",
+
+        ".tpl" : "text/html",
+        ".jsx" : "text/javascript",
+        ".php" : "text/html",
+        ".asp" : "text/html",
+        ".jsp" : "text/jsp",
+        ".txt" : "text/plain",
+        ".json" : "application/json",
+        ".text" : "text/plain",
+        ".md" : "text/plain",
+        ".xhtml" : "text/html",
+        ".conf" : "text/plain",
+        ".po" : "text/plain",
+        ".coffee" : "text/javascript",
+        ".sass" : "text/css",
+        ".scss" : "text/css",
+        ".styl" : "text/css",
+        ".manifest" : "text/cache-manifest",
+        ".svg" : "image/svg+xml",
+        ".tif" : "image/tiff",
+        ".tiff" : "image/tiff",
+        ".wbmp" : "image/vnd.wap.wbmp",
+        ".webp" : "image/webp",
+        ".png" : "image/png",
+        ".bmp" : "image/bmp",
+        ".fax" : "image/fax",
+        ".gif" : "image/gif",
+        ".ico" : "image/x-icon",
+        ".jfif" : "image/jpeg",
+        ".jpg" : "image/jpeg",
+        ".jpe" : "image/jpeg",
+        ".jpeg" : "image/jpeg",
+        ".eot" : "application/vnd.ms-fontobject",
+        ".woff" : "application/font-woff",
+        ".woff2" : "application/font-woff",
+        ".ttf" : "application/octet-stream",
+        ".cur" : "application/octet-stream",
+        
+        ".config" : null,
+		".mdb": null,
+		".db": null
+    }
+}
