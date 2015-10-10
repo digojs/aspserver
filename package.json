@@ -1,24 +1,28 @@
 {
-  "name": "aspserver",
-  "description": "A simple webserver similar to ASP",
-  "version": "1.1.1",
-  "bin": {
-    "aspserver": "./bin/aspserver"
-  },
-  "keywords": [
-    "web server",
-    "asp server",
-    "http server"
-  ],
-  "author": {
-    "name": "xuld",
-    "email": "xuld@vip.qq.com"
-  },
-  "main": "./lib/index.js",
-  "readme": "﻿一个即拿即用的 NODE 服务器框架，帮助快速搭建一个服务器，并自动拥有目录浏览等功能。\r\n\r\n## 特性\r\n\r\n1. 不同于 [Express](https://github.com/strongloop/express), AspServer 提供传统的基于文件的服务器构架，用户请求一个 .njs 文件后，该文件代码会执行并输出结果，就像传统的 PHP 和 ASP。\r\n2. 支持同端口多站点。\r\n3. 支持扩展插件。\r\n\r\n## 基本用法\r\n\r\n    var HttpServer = require('aspserver').HttpServer;\r\n    \r\n    var server = new HttpServer({\r\n        port: 8080,\r\n        physicalPath: \"./\"\r\n    });\r\n\r\n    server.start();\r\n\r\n## 程序接口\r\n\r\n新建一个 hello.njs 并写入：\r\n\r\n\tresponse.write(\"hello world\");\r\n\t\r\n请求此文件即可查看结果。\r\n",
-  "readmeFilename": "README.md",
-  "_id": "aspserver@1.1.1",
-  "scripts": {},
-  "_shasum": "9259191666b8520743c549dfa1d520e88756fc00",
-  "_from": "aspserver@*"
+    "name": "aspserver",
+    "description": "A simple webserver similar to ASP",
+    "version": "1.1.1",
+    "bin": {
+        "aspserver": "./bin/aspserver"
+    },
+    "keywords": [
+        "web server",
+        "asp server",
+        "http server"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/xuld/aspserver.git"
+    },
+    "bugs": {
+        "url": "https://github.com/xuld/aspserver/issues",
+        "email": "xuld@vip.qq.com"
+    },
+    "homepage": "https://github.com/xuld/aspserver#readme",
+    "license": "MIT",
+    "author": {
+        "name": "xuld",
+        "email": "xuld@vip.qq.com"
+    },
+    "main": "./lib/index.js"
 }

@@ -6,6 +6,11 @@
 2. 支持同端口多站点。
 3. 支持扩展插件。
 
+## 下载安装
+
+	> npm install -g aspserver
+	> aspserver 8080
+
 ## 基本用法
 
     var HttpServer = require('aspserver').HttpServer;
