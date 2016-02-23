@@ -21,7 +21,7 @@ exports.processRequest = function (context) {
             var newPath = path.replace(regexp, urlRewrites[rule]);
 
             if (/^https?:\/\//.test(newPath)) {
-                httpsProxy(newPath, context);
+                httpProxy(newPath, context);
             } else {
                 context.rewritePath('/' + newPath);
             }
@@ -46,11 +46,8 @@ function httpProxy(url, context) {
     }
 
     url.headers.host = url.host;
-    if (url.port && url.port !== 80) {
-        url.headers.host += ':' + url.port;
-    }
-
-    var req = (newPath.charAt(4) ? require('http') : require('https')).request(url, function (srcRes) {
+    
+    var req = (url.protocol === "https" ? require('https') : require('http')).request(url, function (srcRes) {
         var destRes = context.response;
         srcRes.on('data', function (chunk) {
             destRes.binaryWrite(chunk);
