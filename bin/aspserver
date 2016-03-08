@@ -9,4 +9,4 @@ var server = new HttpServer({
 
 server.start();
 
-console.log("Server Running At " + server.rootUrl);
+console.log("Server Running At " + server.url);
