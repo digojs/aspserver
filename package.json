@@ -1,28 +1,25 @@
 {
-    "name": "aspserver",
-    "description": "A simple webserver similar to ASP",
-    "version": "1.2.0",
-    "bin": {
-        "aspserver": "./bin/aspserver"
-    },
-    "keywords": [
-        "web server",
-        "asp server",
-        "http server"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/xuld/aspserver.git"
-    },
-    "bugs": {
-        "url": "https://github.com/xuld/aspserver/issues",
-        "email": "xuld@vip.qq.com"
-    },
-    "homepage": "https://github.com/xuld/aspserver#readme",
-    "license": "MIT",
-    "author": {
-        "name": "xuld",
-        "email": "xuld@vip.qq.com"
-    },
-    "main": "./lib/index.js"
+  "name": "aspserver",
+  "version": "1.2.1",
+  "description": "A simple webserver similar to ASP. | 一个简单的类 ASP 服务器。",
+  "homepage": "https://github.com/digojs/aspserver",
+  "author": "xuld <xuld@vip.qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/digojs/aspserver.git"
+  },
+  "keywords": [
+    "web server",
+    "asp server",
+    "http server"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digojs/aspserver/issues",
+    "email": "xuld@vip.qq.com"
+  },
+  "bin": {
+    "aspserver": "./bin/aspserver"
+  },
+  "main": "./lib/index.js"
 }
