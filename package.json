@@ -1,6 +1,6 @@
 {
   "name": "aspserver",
-  "version": "1.2.4",
+  "version": "1.2.6",
   "description": "一个即拿即用的 NODE 服务器框架，帮助快速搭建一个服务器，并自动拥有目录浏览等功能。",
   "homepage": "https://github.com/digojs/aspserver",
   "author": "xuld <xuld@vip.qq.com>",
